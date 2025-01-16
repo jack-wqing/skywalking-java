@@ -29,6 +29,7 @@ import org.apache.skywalking.apm.agent.core.context.TracingContext;
 /**
  * profile task execution context, it will create on process this profile task
  */
+// profiling task ExecutionContext
 public class ProfileTaskExecutionContext {
 
     // task data

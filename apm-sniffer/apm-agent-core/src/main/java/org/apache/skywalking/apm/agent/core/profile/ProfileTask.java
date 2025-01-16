@@ -23,6 +23,7 @@ import java.util.Objects;
 /**
  * Profile task bean, receive from OAP server
  */
+// Trace Profiling
 public class ProfileTask {
 
     // task id

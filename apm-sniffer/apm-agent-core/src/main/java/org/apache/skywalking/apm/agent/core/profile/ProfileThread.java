@@ -27,6 +27,7 @@ import java.util.concurrent.atomic.AtomicReferenceArray;
 /**
  * Profile task process thread, dump the executing thread stack.
  */
+// Profiling Thread
 public class ProfileThread implements Runnable {
 
     private static final ILog LOGGER = LogManager.getLogger(ProfileThread.class);

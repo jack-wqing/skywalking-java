@@ -40,6 +40,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 /**
  * Profile task executor, use {@link #addProfileTask(ProfileTask)} to add a new profile task.
  */
+// profiling task executor
 @DefaultImplementor
 public class ProfileTaskExecutionService implements BootService, TracingThreadListener {
 

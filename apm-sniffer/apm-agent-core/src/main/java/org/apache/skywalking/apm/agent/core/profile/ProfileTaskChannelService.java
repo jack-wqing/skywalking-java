@@ -182,7 +182,7 @@ public class ProfileTaskChannelService implements BootService, Runnable, GRPCCha
     }
 
     /**
-     * notify backend profile task has finish
+     * notify backend profile task has finish // finish task
      */
     public void notifyProfileTaskFinish(ProfileTask task) {
         try {

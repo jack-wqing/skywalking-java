@@ -28,6 +28,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Wrapper {@link ProfileStatus}, make sure {@link org.apache.skywalking.apm.agent.core.context.TracingContext} with {@link ThreadProfiler} have same reference with {@link ProfileStatus},
  * And only the profile module could change the status
  */
+// ProfileStatus: Context
 public class ProfileStatusContext {
 
     private volatile ProfileStatus status;
