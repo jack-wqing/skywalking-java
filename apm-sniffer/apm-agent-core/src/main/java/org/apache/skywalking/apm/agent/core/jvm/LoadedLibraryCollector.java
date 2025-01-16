@@ -37,6 +37,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.util.CollectionUtil;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
 
+// Service instance State Loaded Library
 public class LoadedLibraryCollector {
 
     private static final ILog LOGGER = LogManager.getLogger(LoadedLibraryCollector.class);

@@ -22,7 +22,7 @@ import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 import org.apache.skywalking.apm.network.language.agent.v3.Thread;
-
+// jvm thread info
 public enum ThreadProvider {
     INSTANCE;
     private final ThreadMXBean threadMXBean;

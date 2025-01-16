@@ -24,6 +24,7 @@ import java.util.function.Supplier;
  * The main entrance API of the plugin meter system. {@link Counter}, {@link Gauge}, and {@link Histogram} are created
  * through the MeterFactory.
  */
+// meter Factory
 public class MeterFactory {
 
     /**

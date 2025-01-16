@@ -28,6 +28,8 @@ import java.util.function.Supplier;
 /**
  * A gauge is a metric that represents a single numerical value that can arbitrarily go up and down.
  */
+// single value = up and down
+
 public class Gauge extends BaseMeter {
     private static final ILog LOGGER = LogManager.getLogger(Gauge.class);
     protected Supplier<Double> getter;

@@ -20,6 +20,7 @@ package org.apache.skywalking.apm.agent.core.meter;
 
 import java.util.Objects;
 
+// MeterTag: Key <-> Value
 public class MeterTag implements Comparable<MeterTag> {
 
     private String key;

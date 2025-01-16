@@ -23,6 +23,7 @@ import java.lang.management.ManagementFactory;
 import java.util.List;
 import org.apache.skywalking.apm.network.language.agent.v3.GC;
 
+// GC Provider
 public enum GCProvider {
     INSTANCE;
 

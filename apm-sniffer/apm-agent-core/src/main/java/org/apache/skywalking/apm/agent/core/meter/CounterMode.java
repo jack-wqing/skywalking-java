@@ -21,6 +21,7 @@ package org.apache.skywalking.apm.agent.core.meter;
 /**
  * Counter mode
  */
+// Counter Mode
 public enum CounterMode {
     /**
      * INCREMENT mode represents reporting the latest value.

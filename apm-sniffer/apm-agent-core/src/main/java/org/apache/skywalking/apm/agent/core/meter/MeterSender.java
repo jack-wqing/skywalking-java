@@ -44,6 +44,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.GRPC_UP
 /**
  * MeterSender collects the values of registered meter instances, and sends to the backend.
  */
+// meter sender
 @DefaultImplementor
 public class MeterSender implements BootService, GRPCChannelListener {
     private static final ILog LOGGER = LogManager.getLogger(MeterSender.class);

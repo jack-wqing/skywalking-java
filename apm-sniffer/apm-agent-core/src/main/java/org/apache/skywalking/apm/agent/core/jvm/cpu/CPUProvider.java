@@ -23,6 +23,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.agent.core.os.ProcessorUtil;
 import org.apache.skywalking.apm.network.common.v3.CPU;
 
+// sun CPU get
 public enum CPUProvider {
     INSTANCE;
     private CPUMetricsAccessor cpuMetricsAccessor;

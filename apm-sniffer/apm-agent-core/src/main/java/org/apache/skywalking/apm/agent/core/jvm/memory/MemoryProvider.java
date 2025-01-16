@@ -25,6 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 import org.apache.skywalking.apm.network.language.agent.v3.Memory;
 
+// JVM  memory
 public enum MemoryProvider {
     INSTANCE;
     private final MemoryMXBean memoryMXBean;

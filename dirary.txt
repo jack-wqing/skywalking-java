@@ -3,3 +3,13 @@
 
 Profiling：
     1.完成时间在执行时间区间只执行一个分析ProfilingTask
+
+log: 记录的logger日志框架的拦截记录
+
+JVM: 定时上报
+
+Trace:
+
+event: 系统时间 和 服务端连接的网络事件
+
+

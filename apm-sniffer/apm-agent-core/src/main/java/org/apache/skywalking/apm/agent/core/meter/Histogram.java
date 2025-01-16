@@ -33,6 +33,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.MeterHistogram;
  * the num of collected values in every specific range. The ranges could start from any value(default 0) to positive
  * infinitive. They can be set through the constructor and immutable after that.
  */
+// Histogram
 public class Histogram extends BaseMeter {
     protected final Bucket[] buckets;
 

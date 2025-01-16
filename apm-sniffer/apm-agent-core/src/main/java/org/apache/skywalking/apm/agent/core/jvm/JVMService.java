@@ -42,6 +42,7 @@ import org.apache.skywalking.apm.util.RunnableWithExceptionProtection;
  * The <code>JVMService</code> represents a timer, which collectors JVM cpu, memory, memorypool, gc, thread and class info,
  * and send the collected info to Collector through the channel provided by {@link GRPCChannelManager}
  */
+// JVM capture sender backend over 1s
 @DefaultImplementor
 public class JVMService implements BootService, Runnable {
     private static final ILog LOGGER = LogManager.getLogger(JVMService.class);
