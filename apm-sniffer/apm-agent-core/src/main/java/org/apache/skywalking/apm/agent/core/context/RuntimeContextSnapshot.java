@@ -22,6 +22,7 @@ package org.apache.skywalking.apm.agent.core.context;
 import java.util.Iterator;
 import java.util.Map;
 
+// runtimeContextSnapshot
 public class RuntimeContextSnapshot {
     private final Map<Object, Object> map;
 

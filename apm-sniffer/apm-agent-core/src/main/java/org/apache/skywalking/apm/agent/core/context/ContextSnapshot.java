@@ -26,6 +26,7 @@ import org.apache.skywalking.apm.agent.core.profile.ProfileStatusContext;
  * The <code>ContextSnapshot</code> is a snapshot for current context. The snapshot carries the info for building
  * reference between two segments in two thread, but have a causal relationship.
  */
+// ContextSnapshot
 @Getter
 public class ContextSnapshot {
     private DistributedTraceId traceId;

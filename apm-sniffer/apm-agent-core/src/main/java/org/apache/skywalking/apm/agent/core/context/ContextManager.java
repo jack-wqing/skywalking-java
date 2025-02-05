@@ -38,6 +38,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Agent.OPERATION_N
  *
  * <p> Also, {@link ContextManager} delegates to all {@link AbstractTracerContext}'s major methods.
  */
+// all TraceSegment: ContextManager
 public class ContextManager implements BootService {
     private static final String EMPTY_TRACE_CONTEXT_ID = "N/A";
     private static final ILog LOGGER = LogManager.getLogger(ContextManager.class);
@@ -72,6 +73,7 @@ public class ContextManager implements BootService {
     /**
      * @return the first global trace id when tracing. Otherwise, "N/A".
      */
+    // segment
     public static String getGlobalTraceId() {
         AbstractTracerContext context = CONTEXT.get();
         return Objects.nonNull(context) ? context.getReadablePrimaryTraceId() : EMPTY_TRACE_CONTEXT_ID;

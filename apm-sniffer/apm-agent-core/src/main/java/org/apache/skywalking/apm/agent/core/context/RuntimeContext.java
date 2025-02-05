@@ -30,6 +30,7 @@ import org.apache.skywalking.apm.agent.core.conf.RuntimeContextConfiguration;
  * <p>
  * In most cases, it means it only stays in a single thread for context propagation.
  */
+// runtimeContext
 public class RuntimeContext {
     private final ThreadLocal<RuntimeContext> contextThreadLocal;
     private Map<Object, Object> context = new ConcurrentHashMap<>(0);
