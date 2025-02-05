@@ -43,6 +43,7 @@ import static org.apache.skywalking.apm.agent.core.plugin.match.MethodInheritanc
  * combine the path value of current annotation on current method and the base path and set the new path to the dynamic
  * filed
  */
+// Controller
 public abstract class AbstractControllerInstrumentation extends AbstractSpring5Instrumentation {
     @Override
     public ConstructorInterceptPoint[] getConstructorsInterceptPoints() {
@@ -60,7 +61,7 @@ public abstract class AbstractControllerInstrumentation extends AbstractSpring5I
             }
         };
     }
-
+    // InstanceMethodsInterceptPoint
     @Override
     public InstanceMethodsInterceptPoint[] getInstanceMethodsInterceptPoints() {
         return new InstanceMethodsInterceptPoint[] {

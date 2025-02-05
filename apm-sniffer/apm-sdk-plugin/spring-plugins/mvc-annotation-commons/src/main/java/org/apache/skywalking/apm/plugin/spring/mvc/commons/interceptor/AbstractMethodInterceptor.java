@@ -54,6 +54,7 @@ import static org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants.RESP
 /**
  * the abstract method interceptor
  */
+// spring AbstractMethod Interceptor
 public abstract class AbstractMethodInterceptor implements InstanceMethodsAroundInterceptor {
     private static final ILog LOGGER = LogManager.getLogger(AbstractMethodInterceptor.class);
     private static boolean IS_SERVLET_GET_STATUS_METHOD_EXIST;

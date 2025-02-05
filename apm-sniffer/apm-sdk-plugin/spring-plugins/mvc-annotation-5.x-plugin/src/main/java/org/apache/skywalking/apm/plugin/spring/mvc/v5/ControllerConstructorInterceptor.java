@@ -38,6 +38,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * <p>
  * Comment by @wu-sheng
  */
+// support first mapping path
 public class ControllerConstructorInterceptor implements InstanceConstructorInterceptor {
 
     @Override

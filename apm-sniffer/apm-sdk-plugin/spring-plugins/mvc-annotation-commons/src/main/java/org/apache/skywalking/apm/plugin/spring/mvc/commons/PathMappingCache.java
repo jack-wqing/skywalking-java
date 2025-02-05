@@ -26,6 +26,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * {@link PathMappingCache} cache all request urls of {@link org.springframework.stereotype.Controller} .
  */
+// PathMappingCache: Controller Annotation
 public class PathMappingCache {
 
     private static final String PATH_SEPARATOR = "/";

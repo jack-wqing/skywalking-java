@@ -18,7 +18,7 @@
 package org.apache.skywalking.apm.plugin.spring.mvc.v5.define;
 
 import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.ClassInstanceMethodsEnhancePluginDefine;
-
+// Spring 5
 public abstract class AbstractSpring5Instrumentation extends ClassInstanceMethodsEnhancePluginDefine {
     public static final String WITNESS_CLASSES_LOW_VERSION = "org.springframework.beans.annotation.AnnotationBeanUtils";
     public static final String WITNESS_CLASSES_HIGH_VERSION = "org.springframework.core.ReactiveAdapterRegistry";
