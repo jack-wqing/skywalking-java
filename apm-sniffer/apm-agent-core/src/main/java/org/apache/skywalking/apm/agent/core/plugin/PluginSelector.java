@@ -28,6 +28,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Plugin.EXCLUDE_PL
 /**
  * Select some plugins in activated plugins
  */
+// 排除配置文件排除的插件
 public class PluginSelector {
     /**
      * Exclude activated plugins

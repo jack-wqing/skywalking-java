@@ -37,6 +37,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 /**
  * If only ca.crt exists, start TLS. If cert, key and ca files exist, enable mTLS.
  */
+// TLS Channel
 public class TLSChannelBuilder implements ChannelBuilder<NettyChannelBuilder> {
     private static final ILog LOGGER = LogManager.getLogger(TLSChannelBuilder.class);
 

@@ -32,6 +32,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 /**
  * Active authentication header by Config.Agent.AUTHENTICATION
  */
+// Authentication
 public class AuthenticationDecorator implements ChannelDecorator {
     private static final Metadata.Key<String> AUTH_HEAD_HEADER_NAME = Metadata.Key.of("Authentication", Metadata.ASCII_STRING_MARSHALLER);
 

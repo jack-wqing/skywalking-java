@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * the spi of the InstrumentationLoader.
  */
-
+// InstrumentationLoader 实现动态加载
 public interface InstrumentationLoader {
 
     List<AbstractClassEnhancePluginDefine> load(AgentClassLoader classLoader);

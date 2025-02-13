@@ -43,7 +43,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.TraceSegmentReportSer
 import static org.apache.skywalking.apm.agent.core.conf.Config.Buffer.BUFFER_SIZE;
 import static org.apache.skywalking.apm.agent.core.conf.Config.Buffer.CHANNEL_SIZE;
 import static org.apache.skywalking.apm.agent.core.remote.GRPCChannelStatus.CONNECTED;
-
+// TraceSegmentService: Client
 @DefaultImplementor
 public class TraceSegmentServiceClient implements BootService, IConsumer<TraceSegment>, TracingContextListener, GRPCChannelListener {
     private static final ILog LOGGER = LogManager.getLogger(TraceSegmentServiceClient.class);
@@ -164,7 +164,7 @@ public class TraceSegmentServiceClient implements BootService, IConsumer<TraceSe
     public void onExit() {
 
     }
-
+    // TraceSegment: 发送后端
     @Override
     public void afterFinished(TraceSegment traceSegment) {
         if (traceSegment.isIgnore()) {

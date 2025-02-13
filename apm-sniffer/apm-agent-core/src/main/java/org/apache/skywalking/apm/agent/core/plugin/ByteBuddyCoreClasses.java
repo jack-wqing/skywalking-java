@@ -21,6 +21,7 @@ package org.apache.skywalking.apm.agent.core.plugin;
 /**
  * All ByteBuddy core classes required to expose, including open edge for JDK 9+ module, or Bootstrap instrumentation.
  */
+// jdk9+
 public class ByteBuddyCoreClasses {
     private static final String SHADE_PACKAGE = "org.apache.skywalking.apm.dependencies.";
 

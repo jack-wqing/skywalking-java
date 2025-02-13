@@ -28,6 +28,7 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 /**
  * Match class with a given set of classes.
  */
+// name set
 public class MultiClassNameMatch implements IndirectMatch {
 
     private List<String> matchClassNames;

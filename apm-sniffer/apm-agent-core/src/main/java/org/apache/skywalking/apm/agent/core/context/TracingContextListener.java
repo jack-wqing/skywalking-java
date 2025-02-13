@@ -20,6 +20,7 @@ package org.apache.skywalking.apm.agent.core.context;
 
 import org.apache.skywalking.apm.agent.core.context.trace.TraceSegment;
 
+// TracingContext
 public interface TracingContextListener {
     void afterFinished(TraceSegment traceSegment);
 }

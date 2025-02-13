@@ -29,6 +29,7 @@ import java.util.Set;
  * ${name}}. Using {@code PropertyPlaceholderHelper} these placeholders can be substituted for user-supplied values. <p>
  * Values for substitution can be supplied using a {@link Properties} instance or using a {@link PlaceholderResolver}.
  */
+// 属性占位符处理
 public enum PropertyPlaceholderHelper {
 
     INSTANCE(

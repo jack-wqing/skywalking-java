@@ -66,6 +66,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Constants.NAME_TRAIT;
 /**
  * The main entrance of sky-walking agent, based on javaagent mechanism.
  */
+// SW Java Agent
 public class SkyWalkingAgent {
     private static ILog LOGGER = LogManager.getLogger(SkyWalkingAgent.class);
 
@@ -75,6 +76,7 @@ public class SkyWalkingAgent {
     public static void premain(String agentArgs, Instrumentation instrumentation) throws PluginException {
         final PluginFinder pluginFinder;
         try {
+            // 配置初始化
             SnifferConfigInitializer.initializeCoreConfig(agentArgs);
         } catch (Exception e) {
             // try to resolve a new logger, and use the new logger to write the error log here
@@ -90,7 +92,7 @@ public class SkyWalkingAgent {
             LOGGER.warn("SkyWalking agent is disabled.");
             return;
         }
-
+        // 插件解析
         try {
             pluginFinder = new PluginFinder(new PluginBootstrap().loadPlugins());
         } catch (AgentPackageNotFoundException ape) {
@@ -170,7 +172,7 @@ public class SkyWalkingAgent {
         return new SWAgentBuilderDefault(byteBuddy, new SWNativeMethodStrategy(NAME_TRAIT))
                 .with(new SWDescriptionStrategy(NAME_TRAIT));
     }
-
+    // 执行类的匹配拦截的地方
     private static class Transformer implements AgentBuilder.Transformer {
         private PluginFinder pluginFinder;
 
@@ -211,7 +213,7 @@ public class SkyWalkingAgent {
     private static ElementMatcher.Junction<NamedElement> allSkyWalkingAgentExcludeToolkit() {
         return nameStartsWith("org.apache.skywalking.").and(not(nameStartsWith("org.apache.skywalking.apm.toolkit.")));
     }
-
+    // Listener
     private static class Listener implements AgentBuilder.Listener {
         @Override
         public void onDiscovery(String typeName, ClassLoader classLoader, JavaModule module, boolean loaded) {
@@ -252,7 +254,7 @@ public class SkyWalkingAgent {
         public void onComplete(String typeName, ClassLoader classLoader, JavaModule module, boolean loaded) {
         }
     }
-
+    // RedefinitionListener
     private static class RedefinitionListener implements AgentBuilder.RedefinitionStrategy.Listener {
 
         @Override

@@ -31,6 +31,7 @@ import net.bytebuddy.matcher.ElementMatcher;
  * <p>
  * 2019-08-15
  */
+// AnnotationType
 public class AnnotationTypeNameMatch<T extends AnnotationDescription> implements ElementMatcher<T> {
 
     /**

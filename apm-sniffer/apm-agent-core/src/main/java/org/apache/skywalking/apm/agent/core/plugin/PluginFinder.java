@@ -39,6 +39,7 @@ import static net.bytebuddy.matcher.ElementMatchers.not;
  * The <code>PluginFinder</code> represents a finder , which assist to find the one from the given {@link
  * AbstractClassEnhancePluginDefine} list.
  */
+// all type PluginDefine
 public class PluginFinder {
     private final Map<String, LinkedList<AbstractClassEnhancePluginDefine>> nameMatchDefine = new HashMap<String, LinkedList<AbstractClassEnhancePluginDefine>>();
     private final List<AbstractClassEnhancePluginDefine> signatureMatchDefine = new ArrayList<AbstractClassEnhancePluginDefine>();
@@ -87,7 +88,7 @@ public class PluginFinder {
 
         return matchedPlugins;
     }
-
+    // 增强判断
     public ElementMatcher<? super TypeDescription> buildMatch() {
         ElementMatcher.Junction judge = new AbstractJunction<NamedElement>() {
             @Override

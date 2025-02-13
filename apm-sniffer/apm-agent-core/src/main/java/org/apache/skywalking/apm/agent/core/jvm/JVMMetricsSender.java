@@ -38,7 +38,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.JVMMetricCollection;
 import org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.GRPC_UPSTREAM_TIMEOUT;
-
+// JVMMetricsSender
 @DefaultImplementor
 public class JVMMetricsSender implements BootService, Runnable, GRPCChannelListener {
     private static final ILog LOGGER = LogManager.getLogger(JVMMetricsSender.class);

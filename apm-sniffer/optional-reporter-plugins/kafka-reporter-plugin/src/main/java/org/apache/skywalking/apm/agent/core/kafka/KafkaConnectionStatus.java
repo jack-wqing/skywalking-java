@@ -18,6 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.kafka;
 
+// Status
 enum KafkaConnectionStatus {
     CONNECTED, DISCONNECT
 }

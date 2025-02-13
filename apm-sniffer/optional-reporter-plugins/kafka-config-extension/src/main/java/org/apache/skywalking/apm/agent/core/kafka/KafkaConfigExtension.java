@@ -19,7 +19,7 @@
 package org.apache.skywalking.apm.agent.core.kafka;
 
 import java.util.Map;
-
+// kafkaConfig
 public interface KafkaConfigExtension {
     Map<String, String> decode(Map<String, String> config);
 }

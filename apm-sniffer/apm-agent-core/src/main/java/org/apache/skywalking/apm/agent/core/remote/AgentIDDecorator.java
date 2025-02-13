@@ -31,6 +31,7 @@ import org.apache.skywalking.apm.agent.core.conf.Config;
 /**
  * Add agent version(Described in MANIFEST.MF) to the connection establish stage.
  */
+// Agent-Version
 public class AgentIDDecorator implements ChannelDecorator {
     private static final Metadata.Key<String> AGENT_VERSION_HEAD_HEADER_NAME = Metadata.Key.of("Agent-Version", Metadata.ASCII_STRING_MARSHALLER);
 

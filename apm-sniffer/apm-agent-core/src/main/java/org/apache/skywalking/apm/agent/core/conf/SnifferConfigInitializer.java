@@ -50,9 +50,11 @@ import static org.apache.skywalking.apm.agent.core.conf.Constants.SERVICE_NAME_P
  */
 public class SnifferConfigInitializer {
     private static ILog LOGGER = LogManager.getLogger(SnifferConfigInitializer.class);
+    // 系统环境变量覆盖默认的配置路径: 包含文件名
     private static final String SPECIFIED_CONFIG_PATH = "skywalking_config";
     private static final String DEFAULT_CONFIG_FILE_NAME = "/config/agent.config";
     private static final String ENV_KEY_PREFIX = "skywalking.";
+    // 配置文件的全部配置内容
     private static Properties AGENT_SETTINGS;
     private static boolean IS_INIT_COMPLETED = false;
 
@@ -67,6 +69,7 @@ public class SnifferConfigInitializer {
      * <p>
      * At the end, `agent.service_name` and `collector.servers` must not be blank.
      */
+    // skywalking. 自己配置的环境变量的覆盖
     public static void initializeCoreConfig(String agentOptions) {
         AGENT_SETTINGS = new Properties();
         try (final InputStreamReader configFileStream = loadConfig()) {
@@ -81,6 +84,7 @@ public class SnifferConfigInitializer {
         }
 
         try {
+            // 使用系统属性
             overrideConfigBySystemProp();
         } catch (Exception e) {
             LOGGER.error(e, "Failed to read the system properties.");
@@ -258,7 +262,7 @@ public class SnifferConfigInitializer {
         }
         throw new ConfigNotFoundException("Failed to load agent.config.");
     }
-
+    // log的打印形式
     static void configureLogger() {
         switch (Config.Logging.RESOLVER) {
             case JSON:

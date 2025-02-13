@@ -17,7 +17,7 @@
  */
 
 package org.apache.skywalking.apm.agent.core.plugin.bytebuddy;
-
+// ArrayType
 public class ArrayTypeNameChecker {
 
     public static void check(String typeName) {

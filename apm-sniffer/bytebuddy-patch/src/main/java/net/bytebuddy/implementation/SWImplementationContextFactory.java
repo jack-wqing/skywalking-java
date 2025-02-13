@@ -27,6 +27,7 @@ import net.bytebuddy.utility.RandomString;
 /**
  * Support custom suffix name trait, using in cache value field name, field getter/setter delegation, accessor method and so on.
  */
+// 后缀命名协议
 public class SWImplementationContextFactory implements Implementation.Context.Factory {
 
     private String suffixNameTrait;

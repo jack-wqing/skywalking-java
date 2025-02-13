@@ -38,6 +38,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.JVMMetricCollection;
 /**
  * A report to send JVM Metrics data to Kafka Broker.
  */
+// JVMMetrics kafka
 @OverrideImplementor(JVMMetricsSender.class)
 public class KafkaJVMMetricsSender extends JVMMetricsSender implements KafkaConnectionStatusListener {
     private static final ILog LOGGER = LogManager.getLogger(KafkaJVMMetricsSender.class);

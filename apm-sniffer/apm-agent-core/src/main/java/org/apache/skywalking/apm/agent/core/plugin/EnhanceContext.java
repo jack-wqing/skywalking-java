@@ -26,6 +26,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.ClassEnha
  * Based on this context, the plugin core {@link ClassEnhancePluginDefine} knows how to process the specific steps for
  * every particular plugin.
  */
+// EnhanceContext
 public class EnhanceContext {
     private boolean isEnhanced = false;
     /**

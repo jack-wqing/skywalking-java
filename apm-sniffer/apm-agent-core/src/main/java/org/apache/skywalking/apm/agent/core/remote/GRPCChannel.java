@@ -28,6 +28,7 @@ import io.grpc.netty.NettyChannelBuilder;
 import java.util.LinkedList;
 import java.util.List;
 
+// GRPC: Channel
 public class GRPCChannel {
     /**
      * origin channel
@@ -38,7 +39,7 @@ public class GRPCChannel {
     private GRPCChannel(String host, int port, List<ChannelBuilder> channelBuilders,
                         List<ChannelDecorator> decorators) throws Exception {
         ManagedChannelBuilder channelBuilder = NettyChannelBuilder.forAddress(host, port);
-
+        // Dns
         NameResolverRegistry.getDefaultRegistry().register(new DnsNameResolverProvider());
 
         for (ChannelBuilder builder : channelBuilders) {

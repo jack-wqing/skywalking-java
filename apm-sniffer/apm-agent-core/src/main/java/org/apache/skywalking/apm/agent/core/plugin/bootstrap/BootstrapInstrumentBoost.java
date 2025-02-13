@@ -54,6 +54,7 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
  * If there is Bootstrap instrumentation plugin declared in plugin list, BootstrapInstrumentBoost inject the necessary
  * classes into bootstrap class loader, including generated dynamic delegate classes.
  */
+// BootstrapInstrumentBoost
 public class BootstrapInstrumentBoost {
     private static final ILog LOGGER = LogManager.getLogger(BootstrapInstrumentBoost.class);
 

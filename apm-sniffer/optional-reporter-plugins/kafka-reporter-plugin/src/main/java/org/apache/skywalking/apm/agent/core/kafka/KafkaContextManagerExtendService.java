@@ -26,6 +26,7 @@ import org.apache.skywalking.apm.agent.core.remote.GRPCChannelStatus;
 /**
  * For compatible with {@link ContextManagerExtendService}, don't need to manage connection status by self.
  */
+// kafkaContextManager
 @OverrideImplementor(ContextManagerExtendService.class)
 public class KafkaContextManagerExtendService extends ContextManagerExtendService implements KafkaConnectionStatusListener {
 

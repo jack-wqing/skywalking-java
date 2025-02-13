@@ -21,7 +21,7 @@ package org.apache.skywalking.apm.agent.core.kafka;
 import java.util.HashMap;
 import java.util.Map;
 import org.apache.skywalking.apm.agent.core.boot.PluginConfig;
-
+// 类加载期间对属性进行了设置
 public class KafkaReporterPluginConfig {
     public static class Plugin {
         @PluginConfig(root = KafkaReporterPluginConfig.class)

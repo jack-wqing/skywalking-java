@@ -32,6 +32,7 @@ import org.apache.skywalking.apm.agent.core.plugin.loader.AgentClassLoader;
 /**
  * The <code>ServiceManager</code> bases on {@link ServiceLoader}, load all {@link BootService} implementations.
  */
+// BootService SPI
 public enum ServiceManager {
     INSTANCE;
 

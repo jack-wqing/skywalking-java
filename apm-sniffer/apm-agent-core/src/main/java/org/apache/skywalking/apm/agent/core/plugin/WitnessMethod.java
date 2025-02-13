@@ -30,6 +30,7 @@ import static net.bytebuddy.matcher.ElementMatchers.not;
 /**
  * Witness Method for plugin activation
  */
+// witnessMethod
 @ToString
 public class WitnessMethod {
 

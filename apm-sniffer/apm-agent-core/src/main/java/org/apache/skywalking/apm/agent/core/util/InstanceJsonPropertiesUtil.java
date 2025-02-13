@@ -27,7 +27,7 @@ import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.version.Version;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
 import org.apache.skywalking.apm.util.StringUtil;
-
+// InstanceJsonProperties
 public class InstanceJsonPropertiesUtil {
     private static final Gson GSON = new Gson();
 

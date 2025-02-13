@@ -31,6 +31,7 @@ import static net.bytebuddy.matcher.ElementMatchers.not;
 /**
  * {@link ListenableFutureCallbackMatch} match the class that inherited <code>org.springframework.util.concurrent.ListenableFutureCallback</code>.
  */
+// ListenableFutureCallback 匹配
 public class ListenableFutureCallbackMatch implements IndirectMatch {
 
     private static final String LISTENABLE_FUTURE_CALLBACK_CLASS_NAME = "org.springframework.util.concurrent.ListenableFutureCallback";

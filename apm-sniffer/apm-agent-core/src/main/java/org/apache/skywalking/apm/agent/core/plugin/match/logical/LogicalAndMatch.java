@@ -25,6 +25,7 @@ import org.apache.skywalking.apm.agent.core.plugin.match.IndirectMatch;
 /**
  * Match classes by multiple criteria with AND conjunction
  */
+// logical and
 public class LogicalAndMatch implements IndirectMatch {
     private final IndirectMatch[] indirectMatches;
 

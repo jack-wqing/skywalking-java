@@ -30,6 +30,7 @@ import org.apache.skywalking.apm.util.Length;
 /**
  * This is the core config in sniffer agent.
  */
+// SW java agent得整体配置
 public class Config {
 
     public static class Agent {
@@ -218,7 +219,7 @@ public class Config {
          */
         public static boolean IS_RESOLVE_DNS_PERIODICALLY = false;
     }
-
+    // 属性分析任务
     public static class Profile {
         /**
          * If true, skywalking agent will enable profile when user create a new profile task. Otherwise disable

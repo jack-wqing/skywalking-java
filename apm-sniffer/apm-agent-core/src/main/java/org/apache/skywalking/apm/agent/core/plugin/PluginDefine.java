@@ -20,7 +20,7 @@ package org.apache.skywalking.apm.agent.core.plugin;
 
 import org.apache.skywalking.apm.agent.core.plugin.exception.IllegalPluginDefineException;
 import org.apache.skywalking.apm.util.StringUtil;
-
+// plugin = name + define Class
 public class PluginDefine {
     /**
      * Plugin name.

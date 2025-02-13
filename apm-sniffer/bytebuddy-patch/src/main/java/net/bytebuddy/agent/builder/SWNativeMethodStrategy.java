@@ -23,7 +23,7 @@ import org.apache.skywalking.apm.agent.bytebuddy.SWMethodNameTransformer;
 
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.Instrumentation;
-
+// NativeMethod
 public class SWNativeMethodStrategy implements AgentBuilder.Default.NativeMethodStrategy {
 
     private String nameTrait;

@@ -45,6 +45,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.IS_RESOLVE_DNS_PERIODICALLY;
 
+// GRPC: DefaultChannelManager
 @DefaultImplementor
 public class GRPCChannelManager implements BootService, Runnable {
     private static final ILog LOGGER = LogManager.getLogger(GRPCChannelManager.class);
@@ -170,7 +171,7 @@ public class GRPCChannelManager implements BootService, Runnable {
             );
         }
     }
-
+    // 每个监听器启动的时候监听自己到这里
     public void addChannelListener(GRPCChannelListener listener) {
         listeners.add(listener);
     }

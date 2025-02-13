@@ -20,7 +20,7 @@ package org.apache.skywalking.apm.agent.core.remote;
 
 import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
-
+// StreamServicesStatus
 public class GRPCStreamServiceStatus {
     private static final ILog LOGGER = LogManager.getLogger(GRPCStreamServiceStatus.class);
     private volatile boolean status;

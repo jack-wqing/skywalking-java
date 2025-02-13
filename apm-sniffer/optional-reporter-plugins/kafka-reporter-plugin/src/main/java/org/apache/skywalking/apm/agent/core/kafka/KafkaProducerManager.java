@@ -56,6 +56,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 /**
  * Configuring, initializing and holding a KafkaProducer instance for reporters.
  */
+// kafka Producer: 监听器控制 producer 传递
 @DefaultImplementor
 public class KafkaProducerManager implements BootService, Runnable {
 
@@ -81,7 +82,7 @@ public class KafkaProducerManager implements BootService, Runnable {
                 t -> LOGGER.error("unexpected exception.", t)
         ), 0, 120, TimeUnit.SECONDS);
     }
-
+    // 支持sw 多个集群
     String formatTopicNameThenRegister(String topic) {
         String topicName = StringUtil.isBlank(Kafka.NAMESPACE) ? topic
                 : Kafka.NAMESPACE + "-" + topic;

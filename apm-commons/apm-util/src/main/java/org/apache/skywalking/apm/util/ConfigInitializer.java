@@ -40,6 +40,7 @@ import java.util.TreeSet;
  * Init a class's static fields by a {@link Properties}, including static fields and static inner classes.
  * <p>
  */
+// init class`s static fields
 public class ConfigInitializer {
 
     public static void initialize(Properties properties, Class<?> rootConfigType) throws IllegalAccessException {
@@ -225,7 +226,7 @@ public class ConfigInitializer {
         }
     }
 }
-
+// Config desc link
 class ConfigDesc {
     private LinkedList<String> descs = new LinkedList<>();
 

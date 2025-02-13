@@ -40,6 +40,7 @@ import org.apache.skywalking.apm.network.common.v3.Commands;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
 import org.apache.skywalking.apm.network.logging.v3.LogReportServiceGrpc;
 
+// Log 继承日志插件 日志上报
 @DefaultImplementor
 public class LogReportServiceClient implements BootService, GRPCChannelListener, IConsumer<LogData.Builder> {
     private static final ILog LOGGER = LogManager.getLogger(LogReportServiceClient.class);

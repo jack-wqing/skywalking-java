@@ -26,6 +26,7 @@ import static net.bytebuddy.matcher.ElementMatchers.nameMatches;
 /**
  * Match the class by given class name regex expression.
  */
+// name regex
 public class RegexMatch implements IndirectMatch {
     private String[] regexExpressions;
 

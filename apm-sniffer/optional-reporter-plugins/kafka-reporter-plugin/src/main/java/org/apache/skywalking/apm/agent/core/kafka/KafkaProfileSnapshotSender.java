@@ -35,6 +35,7 @@ import org.apache.skywalking.apm.network.language.profile.v3.ThreadSnapshot;
  * To transport profiling tasks between OAP Server and agent with gRPC. This is why we still have to configure gRPC. But
  * to report the tracing profile snapshot data by Kafka Producer.
  */
+// kafka Profile sender
 @OverrideImplementor(ProfileSnapshotSender.class)
 public class KafkaProfileSnapshotSender extends ProfileSnapshotSender implements KafkaConnectionStatusListener {
     private static final ILog LOGGER = LogManager.getLogger(ProfileSnapshotSender.class);

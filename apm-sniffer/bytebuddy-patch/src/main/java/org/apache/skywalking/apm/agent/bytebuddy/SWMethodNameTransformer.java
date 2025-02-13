@@ -25,6 +25,7 @@ import net.bytebuddy.utility.RandomString;
 /**
  * Generate fixed origin method name with method description hash code
  */
+// Method方法名
 public class SWMethodNameTransformer implements MethodNameTransformer {
 
     private static final String DEFAULT_PREFIX = "original$";

@@ -55,7 +55,7 @@ public class EventReportServiceClient implements BootService, GRPCChannelListene
     private EventServiceGrpc.EventServiceStub eventServiceStub;
 
     private GRPCChannelStatus status;
-
+    // Prepare上报应用开始
     @Override
     public void prepare() throws Throwable {
         ServiceManager.INSTANCE.findService(GRPCChannelManager.class).addChannelListener(this);

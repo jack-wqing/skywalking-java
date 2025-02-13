@@ -36,6 +36,7 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 /**
  * Match the class, which has methods with the certain annotations. This is a very complex match.
  */
+//
 public class MethodAnnotationMatch implements IndirectMatch {
     private String[] annotations;
 

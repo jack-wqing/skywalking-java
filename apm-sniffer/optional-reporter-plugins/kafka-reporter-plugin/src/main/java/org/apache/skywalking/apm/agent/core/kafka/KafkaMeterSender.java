@@ -37,6 +37,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.MeterDataCollection;
 /**
  * A report to send Metrics data of meter system to Kafka Broker.
  */
+// meter kafka
 @OverrideImplementor(MeterSender.class)
 public class KafkaMeterSender extends MeterSender implements KafkaConnectionStatusListener {
     private static final ILog LOGGER = LogManager.getLogger(KafkaTraceSegmentServiceClient.class);

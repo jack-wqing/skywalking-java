@@ -156,7 +156,7 @@ public class AgentClassLoader extends ClassLoader {
             }
         };
     }
-
+    // 插件类加载的时候填充插件配置
     private Class<?> processLoadedClass(Class<?> loadedClass) {
         final PluginConfig pluginConfig = loadedClass.getAnnotation(PluginConfig.class);
         if (pluginConfig != null) {

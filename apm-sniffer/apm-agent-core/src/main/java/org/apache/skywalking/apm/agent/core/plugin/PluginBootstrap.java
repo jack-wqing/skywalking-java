@@ -30,6 +30,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
  * Plugins finder. Use {@link PluginResourcesResolver} to find all plugins, and ask {@link PluginCfg} to load all plugin
  * definitions.
  */
+// 通过配置文件skywalking-plugin.def加载初始化 AbstractClassEnhancePluginDefine
 public class PluginBootstrap {
     private static final ILog LOGGER = LogManager.getLogger(PluginBootstrap.class);
 

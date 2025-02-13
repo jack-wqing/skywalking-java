@@ -1,6 +1,13 @@
-
-
-
+源码解析:
+    SkyWalkingAgent
+        1./config/agent.config解析，可以通过系统属性skywalking_config 执行配置文件的路径
+        2.PluginFinder: ByteBuddy 插件解析
+            PluginBootstrap发现所有的插件
+            PluginFinder: 具有加载的所有插件[配置文件[core/custom]]
+        3.installClassTransformer:
+            ByteBuddy: 对象封装
+        4.ServiceManager:
+            BootService管理: 所有远程的服务
 Profiling：
     1.完成时间在执行时间区间只执行一个分析ProfilingTask
 
@@ -13,3 +20,5 @@ Trace:
 event: 系统时间 和 服务端连接的网络事件
 
 
+---------------------------------------------------------
+kafka-report

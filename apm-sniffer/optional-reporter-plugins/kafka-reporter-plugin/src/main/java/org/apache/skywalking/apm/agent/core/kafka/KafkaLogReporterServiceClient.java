@@ -27,7 +27,7 @@ import org.apache.skywalking.apm.agent.core.conf.Config;
 import org.apache.skywalking.apm.agent.core.remote.LogReportServiceClient;
 import org.apache.skywalking.apm.agent.core.util.CollectionUtil;
 import org.apache.skywalking.apm.network.logging.v3.LogData;
-
+// kafka client
 @OverrideImplementor(LogReportServiceClient.class)
 public class KafkaLogReporterServiceClient extends LogReportServiceClient implements KafkaConnectionStatusListener {
 

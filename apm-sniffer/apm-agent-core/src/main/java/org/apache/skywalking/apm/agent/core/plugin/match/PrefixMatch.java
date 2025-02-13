@@ -25,6 +25,7 @@ import net.bytebuddy.matcher.ElementMatchers;
 /**
  * Match classes by any one of the given {@link #prefixes}
  */
+// name Prefix
 @SuppressWarnings("rawtypes")
 public class PrefixMatch implements IndirectMatch {
     private String[] prefixes;

@@ -20,6 +20,7 @@ package org.apache.skywalking.apm.agent.core.remote;
 
 import io.grpc.ManagedChannelBuilder;
 
+// ManagedChannel builder得机会
 public interface ChannelBuilder<B extends ManagedChannelBuilder> {
     B build(B managedChannelBuilder) throws Exception;
 }

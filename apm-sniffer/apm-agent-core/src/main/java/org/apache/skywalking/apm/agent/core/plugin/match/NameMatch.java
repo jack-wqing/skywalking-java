@@ -21,6 +21,7 @@ package org.apache.skywalking.apm.agent.core.plugin.match;
 /**
  * Match the class with an explicit class name.
  */
+// 明确类名称匹配
 public class NameMatch implements ClassMatch {
     private String className;
 

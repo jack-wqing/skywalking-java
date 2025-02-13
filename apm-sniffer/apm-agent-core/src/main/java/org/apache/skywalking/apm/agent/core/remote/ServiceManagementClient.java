@@ -43,7 +43,7 @@ import org.apache.skywalking.apm.network.management.v3.ManagementServiceGrpc;
 import org.apache.skywalking.apm.util.RunnableWithExceptionProtection;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.GRPC_UPSTREAM_TIMEOUT;
-
+// ServiceManagement 实例维护信息
 @DefaultImplementor
 public class ServiceManagementClient implements BootService, Runnable, GRPCChannelListener {
     private static final ILog LOGGER = LogManager.getLogger(ServiceManagementClient.class);

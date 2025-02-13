@@ -34,6 +34,7 @@ import static net.bytebuddy.matcher.ElementMatchers.not;
 /**
  * Match the class by the given annotations in class.
  */
+//Class Annotation
 public class ClassAnnotationMatch implements IndirectMatch {
     private String[] annotations;
 

@@ -18,6 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.remote;
 
+// GRPC: ChannelListener
 public interface GRPCChannelListener {
     void statusChanged(GRPCChannelStatus status);
 }

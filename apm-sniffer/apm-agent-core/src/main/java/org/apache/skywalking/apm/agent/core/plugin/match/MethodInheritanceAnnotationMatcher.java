@@ -37,6 +37,7 @@ import static net.bytebuddy.matcher.ElementMatchers.annotationType;
 /**
  * Matching used to match method annotations, Can match annotations on interface methods
  */
+// method annotation注解
 @HashCodeAndEqualsPlugin.Enhance
 public class MethodInheritanceAnnotationMatcher<T extends MethodDescription> extends ElementMatcher.Junction.AbstractBase<T> {
     /**

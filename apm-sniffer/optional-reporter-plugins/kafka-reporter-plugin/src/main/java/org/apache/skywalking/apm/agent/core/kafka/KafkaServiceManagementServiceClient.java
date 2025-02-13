@@ -45,6 +45,7 @@ import org.apache.skywalking.apm.util.RunnableWithExceptionProtection;
 /**
  * A service management data(Instance registering properties and Instance pinging) reporter.
  */
+// kafka manager
 @OverrideImplementor(ServiceManagementClient.class)
 public class KafkaServiceManagementServiceClient implements BootService, Runnable, KafkaConnectionStatusListener {
     private static final ILog LOGGER = LogManager.getLogger(KafkaServiceManagementServiceClient.class);

@@ -18,6 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.kafka;
 
+// kafka Listener
 interface KafkaConnectionStatusListener {
     void onStatusChanged(KafkaConnectionStatus status);
 }

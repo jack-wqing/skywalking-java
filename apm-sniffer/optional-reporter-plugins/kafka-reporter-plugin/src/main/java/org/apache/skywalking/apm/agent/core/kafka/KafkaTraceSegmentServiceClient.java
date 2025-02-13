@@ -111,7 +111,7 @@ public class KafkaTraceSegmentServiceClient implements BootService, IConsumer<Tr
     public void onExit() {
 
     }
-
+    // trace finished
     @Override
     public void afterFinished(final TraceSegment traceSegment) {
         if (LOGGER.isDebugEnable()) {

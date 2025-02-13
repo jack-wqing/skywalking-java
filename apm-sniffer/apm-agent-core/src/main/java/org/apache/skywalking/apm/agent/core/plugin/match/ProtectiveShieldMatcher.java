@@ -32,6 +32,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
  * Notice: this ignore mechanism may miss some instrumentations, but at most cases, it's same. If missing happens,
  * please pay attention to the WARNING logs.
  */
+// Protective Matcher
 public class ProtectiveShieldMatcher<T> extends ElementMatcher.Junction.AbstractBase<T> {
     private static final ILog LOGGER = LogManager.getLogger(ProtectiveShieldMatcher.class);
 

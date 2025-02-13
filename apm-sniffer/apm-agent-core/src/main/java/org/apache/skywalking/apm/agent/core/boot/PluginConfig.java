@@ -29,6 +29,7 @@ import java.lang.annotation.Target;
  * this interface to have the same capability about initializing config from agent.config, system properties and system
  * environment variables.
  */
+// 支持插件的配置
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface PluginConfig {
