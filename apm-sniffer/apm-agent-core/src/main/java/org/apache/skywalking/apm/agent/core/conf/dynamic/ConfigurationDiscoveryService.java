@@ -54,6 +54,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 
 import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.GRPC_UPSTREAM_TIMEOUT;
 
+// 动态: 配置远程管理
 @DefaultImplementor
 public class ConfigurationDiscoveryService implements BootService, GRPCChannelListener {
 
