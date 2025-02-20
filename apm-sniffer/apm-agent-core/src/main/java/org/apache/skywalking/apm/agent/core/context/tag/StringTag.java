@@ -24,6 +24,7 @@ import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
  * A subclass of {@link AbstractTag}, represent a tag with a {@link String} value.
  * <p>
  */
+// StringTag
 public class StringTag extends AbstractTag<String> {
 
     public StringTag(String tagKey) {

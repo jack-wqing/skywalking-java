@@ -27,6 +27,7 @@ import org.apache.skywalking.apm.util.StringUtil;
  * <p>
  * This kind of span can start and finish multi times in a stack-like invoke line.
  */
+// span start and finish multi times
 public abstract class StackBasedTracingSpan extends AbstractTracingSpan {
     protected int stackDepth;
     protected String peer;

@@ -19,7 +19,7 @@
 package org.apache.skywalking.apm.agent.core.context.trace;
 
 import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
-
+// noop exit
 public class NoopExitSpan extends NoopSpan implements ExitTypeSpan {
     private String peer;
 

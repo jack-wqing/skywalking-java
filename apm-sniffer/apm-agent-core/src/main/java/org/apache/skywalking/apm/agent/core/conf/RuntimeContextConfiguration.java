@@ -19,6 +19,7 @@
 
 package org.apache.skywalking.apm.agent.core.conf;
 
+// RuntimeContext: Configuration
 public class RuntimeContextConfiguration {
 
     public static String[] NEED_PROPAGATE_CONTEXT_KEY = new String[] {

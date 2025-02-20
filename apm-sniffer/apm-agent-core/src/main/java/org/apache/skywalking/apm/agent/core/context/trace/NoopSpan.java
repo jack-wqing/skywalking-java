@@ -27,6 +27,7 @@ import org.apache.skywalking.apm.network.trace.component.Component;
  * The <code>NoopSpan</code> represents a span implementation without any actual operation. This span implementation is
  * for {@link IgnoredTracerContext}, for keeping the memory and gc cost as low as possible.
  */
+// NoopSpan
 public class NoopSpan implements AbstractSpan {
     public NoopSpan() {
     }

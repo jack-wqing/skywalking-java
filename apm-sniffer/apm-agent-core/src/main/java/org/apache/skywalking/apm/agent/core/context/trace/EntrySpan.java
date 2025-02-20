@@ -32,6 +32,7 @@ import org.apache.skywalking.apm.network.trace.component.Component;
  * <p>
  * Such as: Tomcat Embed - Dubbox The <code>EntrySpan</code> represents the Dubbox span.
  */
+// EntrySpan
 public class EntrySpan extends StackBasedTracingSpan {
 
     private int currentMaxDepth;

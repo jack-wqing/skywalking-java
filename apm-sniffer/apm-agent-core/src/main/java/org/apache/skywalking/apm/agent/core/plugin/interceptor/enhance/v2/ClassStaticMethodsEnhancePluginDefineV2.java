@@ -27,6 +27,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.v2.InstanceMethod
  * override {@link ClassEnhancePluginDefineV2#getConstructorsInterceptPoints} and {@link
  * ClassEnhancePluginDefineV2#getInstanceMethodsInterceptV2Points}, and return NULL, which means nothing to enhance.
  */
+// Class StaticV2
 public abstract class ClassStaticMethodsEnhancePluginDefineV2 extends ClassEnhancePluginDefineV2 {
 
     /**

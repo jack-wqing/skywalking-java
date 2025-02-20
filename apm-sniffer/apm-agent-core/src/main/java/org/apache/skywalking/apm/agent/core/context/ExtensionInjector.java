@@ -21,6 +21,7 @@ package org.apache.skywalking.apm.agent.core.context;
 /**
  * Inject or read the extension protocol fields,such as {@link ExtensionContext#sendingTimestamp}.
  */
+// ExtensionContext Injector
 public class ExtensionInjector {
 
     private final ExtensionContext extensionContext;

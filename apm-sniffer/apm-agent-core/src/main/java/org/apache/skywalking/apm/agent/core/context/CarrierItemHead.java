@@ -17,7 +17,7 @@
  */
 
 package org.apache.skywalking.apm.agent.core.context;
-
+// CarrierItemHead
 public class CarrierItemHead extends CarrierItem {
     public CarrierItemHead(CarrierItem next) {
         super("", "", next);

@@ -25,6 +25,7 @@ import java.util.Objects;
 import lombok.AllArgsConstructor;
 import org.apache.skywalking.apm.agent.core.conf.Config;
 
+// Span Status Checker
 @AllArgsConstructor
 public enum StatusChecker {
 

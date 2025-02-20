@@ -34,7 +34,7 @@ import org.apache.skywalking.apm.agent.core.remote.GRPCChannelManager;
 import org.apache.skywalking.apm.agent.core.remote.GRPCChannelStatus;
 import org.apache.skywalking.apm.agent.core.sampling.SamplingService;
 import org.apache.skywalking.apm.util.StringUtil;
-// contextManager: ExtendsService
+// AbstractTracerContext: Create
 @DefaultImplementor
 public class ContextManagerExtendService implements BootService, GRPCChannelListener {
 

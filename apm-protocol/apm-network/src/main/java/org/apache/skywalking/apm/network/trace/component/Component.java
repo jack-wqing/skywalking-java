@@ -23,6 +23,7 @@ package org.apache.skywalking.apm.network.trace.component;
  * <p>
  * The supported list is in {@link ComponentsDefine}.
  */
+// component
 public interface Component {
     int getId();
 

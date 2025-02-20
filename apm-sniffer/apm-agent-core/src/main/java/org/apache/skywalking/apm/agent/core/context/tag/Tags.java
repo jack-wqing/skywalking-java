@@ -26,6 +26,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * particular meanings.
  * <p>
  */
+// particular meanings
 public final class Tags {
     private static final Map<String, StringTag> TAG_PROTOTYPES = new ConcurrentHashMap<>();
 

@@ -41,6 +41,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
  * <p>
  * This class wouldn't be loaded in real env. This is a class template for dynamic class generation.
  */
+// InstanceMethodInter: template -> InstanceMethodsAroundInterceptor
 public class InstanceMethodInterTemplate {
     /**
      * This field is never set in the template, but has value in the runtime.

@@ -23,6 +23,7 @@ package org.apache.skywalking.apm.agent.core.plugin.bootstrap;
  * <p>
  * Never used in any plugin or tracing core.
  */
+// BootstrapLog
 public interface IBootstrapLog {
     void info(String format);
 

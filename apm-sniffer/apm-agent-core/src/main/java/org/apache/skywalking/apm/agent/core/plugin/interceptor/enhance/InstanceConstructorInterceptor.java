@@ -23,6 +23,7 @@ package org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance;
  * this interface.
  * <p>
  */
+// InstanceConstructor: Interceptor
 public interface InstanceConstructorInterceptor {
     /**
      * Called after the origin constructor invocation.

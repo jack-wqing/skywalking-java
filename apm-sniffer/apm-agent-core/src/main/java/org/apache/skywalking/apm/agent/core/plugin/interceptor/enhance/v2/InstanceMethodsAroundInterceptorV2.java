@@ -25,6 +25,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
  * A v2 interceptor, which intercept method's invocation. The target methods will be defined in {@link
  * ClassEnhancePluginDefineV2}'s subclass, most likely in {@link ClassInstanceMethodsEnhancePluginDefine}
  */
+// InstanceMethods: InterceptorV2
 public interface InstanceMethodsAroundInterceptorV2 {
     /**
      * called before target method invocation.

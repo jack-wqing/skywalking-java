@@ -30,6 +30,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.ILog;
  * The actual byte-buddy's interceptor to intercept constructor methods. In this class, it provides a bridge between
  * byte-buddy and sky-walking plugin.
  */
+// Constructor
 public class ConstructorInter {
     private static final ILog LOGGER = LogManager.getLogger(ConstructorInter.class);
 

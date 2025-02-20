@@ -55,6 +55,7 @@ import static net.bytebuddy.matcher.ElementMatchers.not;
  * InstanceMethodsInterceptV2Point} and {@link StaticMethodsInterceptV2Point} If plugin is going to enhance constructors,
  * instance methods, or both, {@link ClassEnhancePluginDefineV2} will add a field of {@link Object} type.
  */
+// ClassEnhance: PluginDefineV2
 public abstract class ClassEnhancePluginDefineV2 extends AbstractClassEnhancePluginDefine {
 
     @Override

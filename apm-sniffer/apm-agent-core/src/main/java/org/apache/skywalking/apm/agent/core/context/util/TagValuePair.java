@@ -20,7 +20,7 @@ package org.apache.skywalking.apm.agent.core.context.util;
 import java.util.Objects;
 import org.apache.skywalking.apm.agent.core.context.tag.AbstractTag;
 import org.apache.skywalking.apm.network.common.v3.KeyStringValuePair;
-
+// tag: key / value
 public class TagValuePair {
     private AbstractTag key;
     private String value;

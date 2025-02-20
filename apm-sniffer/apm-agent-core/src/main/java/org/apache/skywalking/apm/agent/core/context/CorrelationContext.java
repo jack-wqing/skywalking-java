@@ -34,6 +34,7 @@ import org.apache.skywalking.apm.util.StringUtil;
 /**
  * Correlation context, use to propagation user custom data.
  */
+// 广播用户自定义的数据
 public class CorrelationContext {
 
     private final Map<String, String> data;
@@ -145,6 +146,7 @@ public class CorrelationContext {
      * Prepare for the cross-process propagation. Inject the {@link #data} into {@link
      * ContextCarrier#getCorrelationContext()}
      */
+    // inject ContextCarrier
     void inject(ContextCarrier carrier) {
         carrier.getCorrelationContext().data.putAll(this.data);
     }
@@ -152,6 +154,7 @@ public class CorrelationContext {
     /**
      * Extra the {@link ContextCarrier#getCorrelationContext()} into this context.
      */
+    // extract
     void extract(ContextCarrier carrier) {
         final Map<String, String> carrierCorrelationContext = carrier.getCorrelationContext().data;
         for (Map.Entry<String, String> entry : carrierCorrelationContext.entrySet()) {

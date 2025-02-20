@@ -31,6 +31,7 @@ import org.apache.skywalking.apm.util.StringUtil;
  * Extension context, It provides the interaction capabilities between the agents deployed in upstream and downstream
  * services.
  */
+// 支持上下游服务的交互能力
 public class ExtensionContext {
 
     private static final ILog LOGGER = LogManager.getLogger(ExtensionContext.class);
@@ -115,6 +116,7 @@ public class ExtensionContext {
      * 2. Tag the {@link Tags#TRANSMISSION_LATENCY} if the context includes `sendingTimestamp`,
      *    which is set by the client side.
      */
+    // 传输使用时间
     void handle(AbstractSpan span) {
         if (this.skipAnalysis) {
             span.skipAnalysis();

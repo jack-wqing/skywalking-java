@@ -30,6 +30,7 @@ import org.apache.skywalking.apm.agent.core.profile.ProfileStatusContext;
  * <p>
  * All operations through this will be ignored, and keep the memory and gc cost as low as possible.
  */
+// IgnoredTracerContext
 public class IgnoredTracerContext implements AbstractTracerContext {
     private static final NoopSpan NOOP_SPAN = new NoopSpan();
     private static final String IGNORE_TRACE = "Ignored_Trace";

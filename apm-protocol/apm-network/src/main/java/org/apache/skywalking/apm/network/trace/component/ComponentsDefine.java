@@ -21,6 +21,7 @@ package org.apache.skywalking.apm.network.trace.component;
 /**
  * The supported list of skywalking java sniffer.
  */
+// define component
 public class ComponentsDefine {
 
     public static final OfficialComponent TOMCAT = new OfficialComponent(1, "Tomcat");

@@ -149,6 +149,7 @@ public abstract class AbstractTracingSpan implements AbstractSpan {
      *
      * @param owner of the Span.
      */
+    // archive segment
     public boolean finish(TraceSegment owner) {
         this.endTime = System.currentTimeMillis();
         owner.archive(this);
@@ -318,7 +319,7 @@ public abstract class AbstractTracingSpan implements AbstractSpan {
             refs.add(ref);
         }
     }
-
+    // prepareForAsync 与 asyncFinish 成对出现
     @Override
     public AbstractSpan prepareForAsync() {
         if (isInAsyncMode) {

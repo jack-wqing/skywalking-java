@@ -25,6 +25,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.EnhancedI
  * annotated with org.apache.skywalking.apm.toolkit.trace.IgnoredException, the error status of the span wouldn't be
  * changed. Because of the annotation supports integration, the subclasses would be also annotated with it.
  */
+// Annotation
 public class AnnotationMatchExceptionCheckStrategy implements ExceptionCheckStrategy {
 
     private static final String TAG_NAME = AnnotationMatchExceptionCheckStrategy.class.getSimpleName();

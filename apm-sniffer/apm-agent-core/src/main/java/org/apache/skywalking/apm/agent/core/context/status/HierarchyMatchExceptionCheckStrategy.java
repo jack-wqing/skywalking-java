@@ -25,6 +25,7 @@ import org.apache.skywalking.apm.agent.core.boot.ServiceManager;
  * listed in org.apache.skywalking.apm.agent.core.conf.Config.StatusCheck#IGNORED_EXCEPTIONS, the error status of the
  * span wouldn't be changed.
  */
+// parent check
 public class HierarchyMatchExceptionCheckStrategy implements ExceptionCheckStrategy {
 
     @Override

@@ -27,6 +27,7 @@ import java.lang.reflect.Method;
  * the interceptor can manipulate the method's return value. <p> The new value set to this object, by {@link
  * MethodInterceptResult#defineReturnValue(Object)}, will override the origin return value.
  */
+// 拦截结果
 public class MethodInterceptResult {
     private boolean isContinue = true;
 

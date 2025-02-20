@@ -30,6 +30,7 @@ import java.util.Objects;
  * ref to two others: {@link StaticMethodsInterceptPoint} and {@link InstanceMethodsInterceptPoint}
  * <p>
  */
+// Construct: InterceptPoint
 public interface ConstructorInterceptPoint {
     /**
      * Constructor matcher

@@ -31,6 +31,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.SegmentObject;
  * A {@link TraceSegment} means the segment, which exists in current {@link Thread}. And the distributed trace is formed
  * by multi {@link TraceSegment}s, because the distributed trace crosses multi-processes, multi-threads. <p>
  */
+// tracing: TraceSegment
 public class TraceSegment {
     /**
      * The id of this trace segment. Every segment has its unique-global-id.
@@ -57,6 +58,7 @@ public class TraceSegment {
      * element, because only one parent {@link TraceSegment} exists, but, in batch scenario, the num becomes greater
      * than 1, also meaning multi-parents {@link TraceSegment}. But we only related the first parent TraceSegment.
      */
+    // parent traceId
     private DistributedTraceId relatedGlobalTraceId;
 
     private boolean ignore = false;

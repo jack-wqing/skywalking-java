@@ -23,6 +23,7 @@ import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 /**
  * A subclass of {@link AbstractTag}, represent a tag with a {@link Integer} value.
  */
+// Integer
 public class IntegerTag extends AbstractTag<Integer> {
 
     public IntegerTag(int id, String tagKey, boolean canOverwrite) {

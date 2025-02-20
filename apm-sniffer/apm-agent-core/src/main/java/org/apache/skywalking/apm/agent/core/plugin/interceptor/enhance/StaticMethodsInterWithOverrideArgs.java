@@ -31,6 +31,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
  * The actual byte-buddy's interceptor to intercept class static methods. In this class, it provides a bridge between
  * byte-buddy and sky-walking plugin.
  */
+// static method inter
 public class StaticMethodsInterWithOverrideArgs {
     private static final ILog LOGGER = LogManager.getLogger(StaticMethodsInterWithOverrideArgs.class);
 

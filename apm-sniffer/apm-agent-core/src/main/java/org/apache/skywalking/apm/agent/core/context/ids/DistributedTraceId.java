@@ -34,6 +34,7 @@ import lombok.ToString;
  * The <code>DistributedTraceId</code> contains only one string, and can NOT be reset, creating a new instance is the
  * only option.
  */
+// TraceId
 @RequiredArgsConstructor
 @ToString
 @EqualsAndHashCode

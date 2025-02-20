@@ -24,6 +24,7 @@ import java.lang.reflect.Method;
  * A interceptor, which intercept method's invocation. The target methods will be defined in {@link
  * ClassEnhancePluginDefine}'s subclass, most likely in {@link ClassInstanceMethodsEnhancePluginDefine}
  */
+// InstanceMethods: AroundInterceptor
 public interface InstanceMethodsAroundInterceptor {
     /**
      * called before target method invocation.

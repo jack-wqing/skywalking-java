@@ -38,7 +38,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Agent.OPERATION_N
  *
  * <p> Also, {@link ContextManager} delegates to all {@link AbstractTracerContext}'s major methods.
  */
-// all TraceSegment: ContextManager
+// ContextManager: AbstractTraceContext + Segment
 public class ContextManager implements BootService {
     private static final String EMPTY_TRACE_CONTEXT_ID = "N/A";
     private static final ILog LOGGER = LogManager.getLogger(ContextManager.class);
@@ -102,7 +102,7 @@ public class ContextManager implements BootService {
         AbstractTracerContext context = CONTEXT.get();
         return Objects.nonNull(context) ? context.getPrimaryEndpointName() : null;
     }
-
+    // Carrier能决定 force Sampling
     public static AbstractSpan createEntrySpan(String operationName, ContextCarrier carrier) {
         AbstractSpan span;
         AbstractTracerContext context;

@@ -34,6 +34,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.v2.Method
 /**
  * This class wouldn't be loaded in real env. This is a class template for dynamic class generation.
  */
+// instance method: Template
 public class InstanceMethodInterV2WithOverrideArgsTemplate {
     /**
      * This field is never set in the template, but has value in the runtime.

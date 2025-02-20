@@ -24,6 +24,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.MethodInt
 /**
  * MethodInvocationContext holds the reference to propagate it between beforeMethod and afterMethod/handleMethodException
  */
+// Context
 @Setter
 @Getter
 public class MethodInvocationContext extends MethodInterceptResult {

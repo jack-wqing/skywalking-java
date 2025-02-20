@@ -24,6 +24,7 @@ import java.lang.reflect.Method;
  * The static method's interceptor interface. Any plugin, which wants to intercept static methods, must implement this
  * interface.
  */
+// StaticMethods
 public interface StaticMethodsAroundInterceptor {
     /**
      * called before target method invocation.

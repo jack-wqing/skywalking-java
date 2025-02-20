@@ -39,6 +39,7 @@ import org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance.StaticMet
  * <p>
  * This class wouldn't be loaded in real env. This is a class template for dynamic class generation.
  */
+// static method template
 public class StaticMethodInterTemplate {
     /**
      * This field is never set in the template, but has value in the runtime.

@@ -33,6 +33,7 @@ import java.util.Objects;
 /**
  * Generate fixed delegate field name for MethodDelegation
  */
+// field nme
 public class DelegateNamingResolver {
     private static final String PREFIX = "delegate$";
     private final String fieldNamePrefix;

@@ -35,6 +35,7 @@ import org.apache.skywalking.apm.agent.core.plugin.loader.InterceptorInstanceLoa
  * The actual byte-buddy's interceptor to intercept class instance methods. In this class, it provides a bridge between
  * byte-buddy and sky-walking plugin.
  */
+// instance method: interceptorV2
 public class InstMethodsInterV2WithOverrideArgs {
     private static final ILog LOGGER = LogManager.getLogger(InstMethodsInterV2WithOverrideArgs.class);
 

@@ -21,6 +21,7 @@ package org.apache.skywalking.apm.agent.core.context.status;
 /**
  *  All exceptions would make the span tagged as the error status.
  */
+// ALL exception is error Status
 public class OffExceptionCheckStrategy implements ExceptionCheckStrategy {
     @Override
     public boolean isError(final Throwable e) {

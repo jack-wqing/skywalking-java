@@ -18,6 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.plugin.interceptor.enhance;
 
+// SkyWalkingDynamicField: EnhancedInstance
 public interface EnhancedInstance {
     Object getSkyWalkingDynamicField();
 

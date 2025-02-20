@@ -18,6 +18,7 @@
 
 package org.apache.skywalking.apm.agent.core.context;
 
+// ExtensionCarrier
 public class SW8ExtensionCarrierItem extends CarrierItem {
     public static final String HEADER_NAME = "sw8-x";
     private final ExtensionContext extensionContext;

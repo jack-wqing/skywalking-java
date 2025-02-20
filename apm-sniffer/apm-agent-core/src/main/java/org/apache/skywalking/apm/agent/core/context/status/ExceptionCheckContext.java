@@ -24,6 +24,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * ExceptionCheckContext contains the exceptions that have been checked by the exceptionCheckStrategies.
  */
+// Exception Cache
 public enum ExceptionCheckContext {
     INSTANCE;
 

@@ -16,7 +16,7 @@
  */
 
 package org.apache.skywalking.apm.agent.core.context;
-
+//sw8-correlation
 public class SW8CorrelationCarrierItem extends CarrierItem {
     public static final String HEADER_NAME = "sw8-correlation";
     private final CorrelationContext correlationContext;

@@ -31,7 +31,7 @@ import org.apache.skywalking.apm.util.StringUtil;
  * TracingContext}.
  * <p>
  */
-// Snapshot: TracingContext
+// Cross Process
 @Setter(AccessLevel.PACKAGE)
 public class ContextCarrier implements Serializable {
     @Getter

@@ -30,6 +30,7 @@ import org.apache.skywalking.apm.network.language.agent.v3.SegmentReference;
  * the exact span of the ref {@link TraceSegment}.
  * <p>
  */
+// trace SegmentRef
 @Getter
 public class TraceSegmentRef {
     private SegmentRefType type;
@@ -46,6 +47,7 @@ public class TraceSegmentRef {
      *
      * @param carrier the valid cross-process propagation format.
      */
+    // ContextCarrier: Process
     public TraceSegmentRef(ContextCarrier carrier) {
         this.type = SegmentRefType.CROSS_PROCESS;
         this.traceId = carrier.getTraceId();
@@ -56,7 +58,7 @@ public class TraceSegmentRef {
         this.parentEndpoint = carrier.getParentEndpoint();
         this.addressUsedAtClient = carrier.getAddressUsedAtClient();
     }
-
+    // ContextSnapshot: Thread
     public TraceSegmentRef(ContextSnapshot snapshot) {
         this.type = SegmentRefType.CROSS_THREAD;
         this.traceId = snapshot.getTraceId().getId();
@@ -107,7 +109,7 @@ public class TraceSegmentRef {
         result = 31 * result + spanId;
         return result;
     }
-
+    // Process Thread
     public enum SegmentRefType {
         CROSS_PROCESS, CROSS_THREAD
     }

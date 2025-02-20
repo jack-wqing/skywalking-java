@@ -32,6 +32,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * need this, and how it works, you need have knowledge about Classloader appointment mechanism.
  * <p>
  */
+// InterceptorInstanceLoader
 public class InterceptorInstanceLoader {
 
     private static ConcurrentHashMap<String, Object> INSTANCE_CACHE = new ConcurrentHashMap<String, Object>();

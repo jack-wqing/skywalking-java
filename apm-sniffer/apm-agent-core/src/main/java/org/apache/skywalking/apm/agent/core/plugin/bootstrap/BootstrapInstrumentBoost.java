@@ -138,6 +138,7 @@ public class BootstrapInstrumentBoost {
      * @param methodsInterceptor of original interceptor in the plugin
      * @return generated delegate class
      */
+    // Interceptor + _internal
     public static Class forInternalDelegateClass(String methodsInterceptor) {
         try {
             return Class.forName(internalDelegate(methodsInterceptor));
@@ -245,6 +246,7 @@ public class BootstrapInstrumentBoost {
      * @param templateClassName represents the class as template in this generation process. The templates are
      *                          pre-defined in SkyWalking agent core.
      */
+    // Template -> TargetInterceptor
     private static void generateDelegator(Map<String, byte[]> classesTypeMap, TypePool typePool,
         String templateClassName, String methodsInterceptor) {
         String internalInterceptorName = internalDelegate(methodsInterceptor);

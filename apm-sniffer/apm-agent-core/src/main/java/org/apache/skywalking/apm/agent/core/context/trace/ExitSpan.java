@@ -108,7 +108,7 @@ public class ExitSpan extends StackBasedTracingSpan implements ExitTypeSpan {
     public String getPeer() {
         return peer;
     }
-
+    // exit span   inject ContextCarrier
     @Override
     public ExitSpan inject(final ContextCarrier carrier) {
         if (!ignored) {

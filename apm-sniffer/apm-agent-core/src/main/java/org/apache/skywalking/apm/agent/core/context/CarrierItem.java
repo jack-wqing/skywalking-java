@@ -20,6 +20,7 @@ package org.apache.skywalking.apm.agent.core.context;
 
 import java.util.Iterator;
 
+// CarrierItem
 public class CarrierItem implements Iterator<CarrierItem> {
     private String headKey;
     private String headValue;

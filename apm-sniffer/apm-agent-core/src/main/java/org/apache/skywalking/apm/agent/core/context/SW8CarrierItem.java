@@ -17,7 +17,7 @@
  */
 
 package org.apache.skywalking.apm.agent.core.context;
-
+// carries item:sw8
 public class SW8CarrierItem extends CarrierItem {
     public static final String HEADER_NAME = "sw8";
     private ContextCarrier carrier;

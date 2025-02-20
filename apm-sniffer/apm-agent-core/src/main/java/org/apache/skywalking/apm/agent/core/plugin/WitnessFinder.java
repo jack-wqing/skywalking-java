@@ -27,7 +27,7 @@ import java.util.Map;
  * The <code>WitnessFinder</code> represents a pool of {@link TypePool}s, each {@link TypePool} matches a {@link
  * ClassLoader}, which helps to find the class declaration existed or not.
  */
-// Witness Finder
+// WitnessFinder
 public enum WitnessFinder {
     INSTANCE;
 

@@ -21,7 +21,7 @@ package org.apache.skywalking.apm.agent.core.context.ids;
 import java.util.UUID;
 
 import org.apache.skywalking.apm.util.StringUtil;
-
+// uuid + threadId + thread-time + thread-seq
 public final class GlobalIdGenerator {
     private static final String PROCESS_ID = UUID.randomUUID().toString().replaceAll("-", "");
     private static final ThreadLocal<IDContext> THREAD_ID_SEQUENCE = ThreadLocal.withInitial(
@@ -50,7 +50,7 @@ public final class GlobalIdGenerator {
             String.valueOf(THREAD_ID_SEQUENCE.get().nextSeq())
         );
     }
-
+    // ID thread time
     private static class IDContext {
         private long lastTimestamp;
         private short threadSeq;

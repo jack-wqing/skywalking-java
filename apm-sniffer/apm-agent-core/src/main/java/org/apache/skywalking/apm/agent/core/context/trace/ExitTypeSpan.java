@@ -23,6 +23,7 @@ import org.apache.skywalking.apm.agent.core.context.ContextCarrier;
 /**
  * The exit span has some additional behaviours
  */
+// ExitTypeSpan
 public interface ExitTypeSpan {
     String getPeer();
 

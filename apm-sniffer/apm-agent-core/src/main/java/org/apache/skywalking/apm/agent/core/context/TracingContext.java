@@ -58,6 +58,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Agent.CLUSTER;
  * happen, we used {@link TraceSegmentRef} for these scenarios. Check {@link TraceSegmentRef} which is from {@link
  * ContextCarrier} or {@link ContextSnapshot}.
  */
+// Child_OF  Follow_OF
 public class TracingContext implements AbstractTracerContext {
     private static final ILog LOGGER = LogManager.getLogger(TracingContext.class);
     private long lastWarningTimestamp = 0;
@@ -77,6 +78,7 @@ public class TracingContext implements AbstractTracerContext {
      * storage-structure. <p> I use {@link LinkedList#removeLast()}, {@link LinkedList#addLast(Object)} and {@link
      * LinkedList#getLast()} instead of {@link #pop()}, {@link #push(AbstractSpan)}, {@link #peek()}
      */
+    // addLast removeLast
     private LinkedList<AbstractSpan> activeSpanStack = new LinkedList<>();
 
     /**
@@ -94,6 +96,7 @@ public class TracingContext implements AbstractTracerContext {
      */
     @SuppressWarnings("unused") // updated by ASYNC_SPAN_COUNTER_UPDATER
     private volatile int asyncSpanCounter;
+    // atomicIntegerFieldUpdater
     private static final AtomicIntegerFieldUpdater<TracingContext> ASYNC_SPAN_COUNTER_UPDATER =
         AtomicIntegerFieldUpdater.newUpdater(TracingContext.class, "asyncSpanCounter");
     private volatile boolean isRunningInAsyncMode;
@@ -129,6 +132,7 @@ public class TracingContext implements AbstractTracerContext {
         if (PROFILE_TASK_EXECUTION_SERVICE == null) {
             PROFILE_TASK_EXECUTION_SERVICE = ServiceManager.INSTANCE.findService(ProfileTaskExecutionService.class);
         }
+        // 添加属性分析：判断当前是否有profile Task
         this.profileStatus = PROFILE_TASK_EXECUTION_SERVICE.addProfiling(
             this, segment.getTraceSegmentId(), firstOPName);
 
@@ -456,9 +460,10 @@ public class TracingContext implements AbstractTracerContext {
                 /*
                  * Notify after tracing finished in the main thread.
                  */
+                // 通知 profileTask
                 TracingThreadListenerManager.notifyFinish(this);
             }
-
+            // traceSegment完成: send backend
             if (isFinishedInMainThread && (!isRunningInAsyncMode || asyncSpanCounter == 0)) {
                 TraceSegment finishedSegment = segment.finish(isLimitMechanismWorking());
                 TracingContext.ListenerManager.notifyFinish(finishedSegment);
@@ -475,6 +480,7 @@ public class TracingContext implements AbstractTracerContext {
      * The <code>ListenerManager</code> represents an event notify for every registered listener, which are notified
      * when the <code>TracingContext</code> finished, and {@link #segment} is ready for further process.
      */
+    // send
     public static class ListenerManager {
         private static List<TracingContextListener> LISTENERS = new LinkedList<>();
 
@@ -594,6 +600,7 @@ public class TracingContext implements AbstractTracerContext {
      *
      * @since 8.10.0
      */
+    // EntrySpan
     private class PrimaryEndpoint {
         @Getter
         private AbstractSpan span;

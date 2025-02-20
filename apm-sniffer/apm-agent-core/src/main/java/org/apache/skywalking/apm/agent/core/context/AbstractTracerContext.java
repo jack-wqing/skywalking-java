@@ -23,12 +23,14 @@ import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
 /**
  * The <code>AbstractTracerContext</code> represents the tracer context manager.
  */
+// Tracer Context
 public interface AbstractTracerContext {
     /**
      * Prepare for the cross-process propagation. How to initialize the carrier, depends on the implementation.
      *
      * @param carrier to carry the context for crossing process.
      */
+    // inject -> ContextCarrier
     void inject(ContextCarrier carrier);
 
     /**
@@ -37,6 +39,7 @@ public interface AbstractTracerContext {
      *
      * @param carrier carried the context from a cross-process segment.
      */
+    // Cross-Process Segment Reference
     void extract(ContextCarrier carrier);
 
     /**
@@ -45,6 +48,7 @@ public interface AbstractTracerContext {
      *
      * @return the {@link ContextSnapshot} , which includes the reference context.
      */
+    // Cross Thread ContextSnapshot
     ContextSnapshot capture();
 
     /**
@@ -53,6 +57,7 @@ public interface AbstractTracerContext {
      *
      * @param snapshot from {@link #capture()} in the parent thread.
      */
+    // Cross Thread
     void continued(ContextSnapshot snapshot);
 
     /**

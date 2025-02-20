@@ -24,6 +24,7 @@ import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 /**
  * The log bridge makes the ILog accessible inside bootstrap classloader, especially for internal interceptor.
  */
+// BootstrapPlugin: Log Bridge
 public class BootstrapPluginLogBridge implements IBootstrapLog {
     public static IBootstrapLog getLogger(String clazz) {
         return new BootstrapPluginLogBridge(clazz);

@@ -26,6 +26,7 @@ import org.apache.skywalking.apm.agent.core.plugin.bootstrap.IBootstrapLog;
 /**
  * This assist help all bootstrap class core interceptor.
  */
+// Bootstrap assist
 public class BootstrapInterRuntimeAssist {
     private static final String AGENT_CLASSLOADER_DEFAULT = "org.apache.skywalking.apm.agent.core.plugin.loader.AgentClassLoader";
     private static final String DEFAULT_AGENT_CLASSLOADER_INSTANCE = "DEFAULT_LOADER";

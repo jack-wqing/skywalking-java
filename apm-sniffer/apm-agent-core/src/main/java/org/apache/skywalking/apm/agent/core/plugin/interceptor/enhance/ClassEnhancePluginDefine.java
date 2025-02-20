@@ -53,6 +53,7 @@ import static net.bytebuddy.matcher.ElementMatchers.not;
  * InstanceMethodsInterceptPoint} and {@link StaticMethodsInterceptPoint} If plugin is going to enhance constructors,
  * instance methods, or both, {@link ClassEnhancePluginDefine} will add a field of {@link Object} type.
  */
+// PluginDefine: ClassEnhance
 public abstract class ClassEnhancePluginDefine extends AbstractClassEnhancePluginDefine {
     private static final ILog LOGGER = LogManager.getLogger(ClassEnhancePluginDefine.class);
 
@@ -97,6 +98,7 @@ public abstract class ClassEnhancePluginDefine extends AbstractClassEnhancePlugi
          * And make sure the source codes manipulation only occurs once.
          *
          */
+        // Add Field
         if (!typeDescription.isAssignableTo(EnhancedInstance.class)) {
             if (!context.isObjectExtended()) {
                 newClassBuilder = newClassBuilder.defineField(

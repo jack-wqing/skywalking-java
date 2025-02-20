@@ -28,6 +28,7 @@ import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 /**
  * The <code>AbstractSpan</code> represents the span's skeleton, which contains all open methods.
  */
+// abstract Span
 public interface AbstractSpan extends AsyncSpan {
     /**
      * Set the component id, which defines in {@link ComponentsDefine}

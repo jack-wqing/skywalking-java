@@ -25,6 +25,7 @@ import org.apache.skywalking.apm.agent.core.context.trace.AbstractSpan;
  * <p>
  * This is typical used in async plugin, especially RPC plugins.
  */
+// AsyncSpan
 public interface AsyncSpan {
     /**
      * The span finish at current tracing context, but the current span is still alive, until {@link #asyncFinish}
