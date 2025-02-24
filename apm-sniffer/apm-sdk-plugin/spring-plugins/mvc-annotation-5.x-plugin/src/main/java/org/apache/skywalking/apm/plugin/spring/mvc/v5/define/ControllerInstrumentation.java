@@ -17,6 +17,7 @@
 
 package org.apache.skywalking.apm.plugin.spring.mvc.v5.define;
 
+// class Controller
 public class ControllerInstrumentation extends AbstractControllerInstrumentation {
 
     public static final String ENHANCE_ANNOTATION = "org.springframework.stereotype.Controller";

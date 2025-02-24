@@ -21,7 +21,7 @@ package org.apache.skywalking.apm.plugin.spring.mvc.commons;
 import org.apache.skywalking.apm.agent.core.boot.PluginConfig;
 
 import java.util.List;
-// springMVC plugin support param
+// springMVC Plugin Config
 public class SpringMVCPluginConfig {
     public static class Plugin {
         @PluginConfig(root = SpringMVCPluginConfig.class)

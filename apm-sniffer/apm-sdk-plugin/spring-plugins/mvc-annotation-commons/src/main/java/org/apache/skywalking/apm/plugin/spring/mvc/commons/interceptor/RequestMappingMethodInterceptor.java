@@ -28,7 +28,7 @@ import java.lang.reflect.Method;
  * The <code>RequestMappingMethodInterceptor</code> only use the first mapping value. it will interceptor with
  * <code>@RequestMapping</code>
  */
-// method URL
+// requestMapping
 public class RequestMappingMethodInterceptor extends AbstractMethodInterceptor {
     @Override
     public String getRequestURL(Method method) {

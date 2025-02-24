@@ -29,7 +29,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * with {@link ThreadProfiler} have same reference with {@link ProfileStatus},
  * And only the profile module could change the status
  */
-// ProfileStatus: Context
+// ProfileStatusContext
 public class ProfileStatusContext {
 
     private volatile ProfileStatus status;

@@ -53,6 +53,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.GRPC_UP
  * snapshot, the data is transferred to the back end. use {@link LinkedBlockingQueue} 3. When profiling task finish, it
  * will send task finish status to backend
  */
+// 1、检测ProfileTask任务， Profile Task Snapshot send to backend;3,任务完成通知
 @DefaultImplementor
 public class ProfileTaskChannelService implements BootService, Runnable, GRPCChannelListener {
     private static final ILog LOGGER = LogManager.getLogger(ProfileTaskChannelService.class);

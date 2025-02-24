@@ -33,6 +33,7 @@ import java.lang.reflect.Method;
  * <code>@GetMapping</code>, <code>@PostMapping</code>, <code>@PutMapping</code>
  * <code>@DeleteMapping</code>, <code>@PatchMapping</code>
  */
+// RequestMapping
 public class RestMappingMethodInterceptor extends AbstractMethodInterceptor {
     @Override
     public String getRequestURL(Method method) {

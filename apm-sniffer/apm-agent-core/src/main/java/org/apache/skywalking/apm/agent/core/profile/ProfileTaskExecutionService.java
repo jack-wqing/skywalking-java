@@ -131,6 +131,7 @@ public class ProfileTaskExecutionService implements BootService, TracingThreadLi
     /**
      * active the selected profile task to execution task, and start a removal task for it.
      */
+    // 通过任务周期执行: 同时只能有一个Profile运行
     private synchronized void processProfileTask(ProfileTask task) {
         // make sure prev profile task already stopped
         stopCurrentProfileTask(taskExecutionContext.get());
@@ -147,7 +148,7 @@ public class ProfileTaskExecutionService implements BootService, TracingThreadLi
     }
 
     /**
-     * stop profile task, remove context data
+     * stop profile task, remove context data: // 任务完成的执行删除任务
      */
     synchronized void stopCurrentProfileTask(ProfileTaskExecutionContext needToStop) {
         // stop same context only

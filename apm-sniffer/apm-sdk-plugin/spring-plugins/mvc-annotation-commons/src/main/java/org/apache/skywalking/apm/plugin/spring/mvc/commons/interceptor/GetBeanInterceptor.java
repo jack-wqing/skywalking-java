@@ -33,6 +33,7 @@ import static org.apache.skywalking.apm.plugin.spring.mvc.commons.Constants.REQU
  * {@link GetBeanInterceptor} pass the {@link NativeWebRequest} object into the {@link
  * org.springframework.stereotype.Controller} object.
  */
+// HandlerMethod
 public class GetBeanInterceptor implements InstanceMethodsAroundInterceptor {
     @Override
     public void beforeMethod(EnhancedInstance objInst, Method method, Object[] allArguments, Class<?>[] argumentsTypes,

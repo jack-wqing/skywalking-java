@@ -40,7 +40,7 @@ import static org.apache.skywalking.apm.agent.core.conf.Config.Collector.GRPC_UP
 /**
  * send segment snapshot
  */
-// ProfileSnapshotSender
+// ProfileSnapshot send to backend
 @DefaultImplementor
 public class ProfileSnapshotSender implements BootService, GRPCChannelListener {
     private static final ILog LOGGER = LogManager.getLogger(ProfileSnapshotSender.class);

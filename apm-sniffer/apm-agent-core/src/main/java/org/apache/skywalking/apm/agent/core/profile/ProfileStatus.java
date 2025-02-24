@@ -21,7 +21,7 @@ package org.apache.skywalking.apm.agent.core.profile;
 /**
  * Profile status, include entire profile cycle
  */
-//Profile 分析cycle
+//Profile Status
 public enum ProfileStatus {
     /**
      * No profile

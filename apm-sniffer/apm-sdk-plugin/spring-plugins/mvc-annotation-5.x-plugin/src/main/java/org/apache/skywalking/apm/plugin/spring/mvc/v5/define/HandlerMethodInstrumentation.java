@@ -30,6 +30,7 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
  * {@link HandlerMethodInstrumentation} intercept the <code>getBean</code> method in the
  * <code>org.springframework.web.method.HandlerMethod</code> class.
  */
+// HandlerMethod
 public class HandlerMethodInstrumentation extends AbstractSpring5Instrumentation {
 
     public static final String ENHANCE_METHOD = "getBean";

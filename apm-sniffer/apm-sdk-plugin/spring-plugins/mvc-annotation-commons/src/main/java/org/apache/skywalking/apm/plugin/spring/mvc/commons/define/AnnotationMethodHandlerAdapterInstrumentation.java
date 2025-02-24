@@ -27,7 +27,7 @@ import org.apache.skywalking.apm.agent.core.plugin.match.ClassMatch;
 
 import static net.bytebuddy.matcher.ElementMatchers.named;
 import static org.apache.skywalking.apm.agent.core.plugin.match.NameMatch.byName;
-
+// AnnotationMethodHandler
 public class AnnotationMethodHandlerAdapterInstrumentation extends ClassInstanceMethodsEnhancePluginDefine {
     @Override
     public ConstructorInterceptPoint[] getConstructorsInterceptPoints() {
